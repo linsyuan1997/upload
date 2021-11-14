@@ -11,16 +11,32 @@
 
 <body>
   <header class="header">
-    這是 header
+    這是 header 我是layout.ejs
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="qa.html">QA</a></li>
+    </ul>
   </header>
+  
+  <div class="main">
+    <div class="menu">
+      <ul>
+        <li><a href="">連結1</a></li>
+        <li><a href="">連結1</a></li>
+        <li><a href="">連結1</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <%- contents %>
+    </div>
+  </div>
 
-  <%- contents %>
 
   <footer class="footer">
-    footer
+    footer 我是layout.ejs
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
-</body>  
+</body>
 
 </html>
